@@ -1,0 +1,12 @@
+fastapi[all]
+openai
+cohere
+langchain-text-splitters
+huggingface-hub
+numpy
+tqdm
+usearch
+pymediawiki
+FlashRank
+mixedbread-ai
+sentence-transformers
