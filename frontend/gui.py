@@ -1,3 +1,7 @@
+"""
+Adapted from https://github.com/Avaiga/demo-chatbot/
+"""
+
 import os
 import sys
 
