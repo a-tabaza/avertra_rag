@@ -21,8 +21,20 @@ The backend is a fully modular and customizable system that can aqcquire data fr
 
 The frontend is a simple conversational interface that handles two main issues, conversation history, it allows for state to be kept, and retrieval of data, it allows for the LLM to dynamically retrieve data from the backend and present it to the user in a conversational manner.
 
-## Technologies
-- Backend: FastAPI, Sentence Transformers, Wikipedia API Wrappers, FlashRank
-- Frontend: Taipy
+## Technical Design Choices
+- FastAPI with Pydantic allow for robust and relaible APIs with the added bonus of automatically generated GUIs for documentation and testing.
+- Sentence Transformers allows for access to any sentence embedding model with the option to switch at any given moment.
+- FlashRank allows for the reranking of search results based on the user's preferences, without heavy PyTorch dependancies.
+- Taipy allows for a simple and easy to use conversational interface that can be easily extended and customized.
+- Wikipedia API Wrappers allow for easy access to the Wikipedia API and the ability to search and retrieve data from Wikipedia.
+- Usearch allows for the serialization and loading of precomputed embeddings for fast retrieval and reranking of search results.
 
-## Code Structure
+## Other Design Choices
+- OpenAI serverless LLMs allow for the easy deployment and access to large language models without the need for heavy infrastructure.
+- Docker allows for the easy deployment and scaling of the backend and frontend for scale and reliability.
+
+## Code Documentation
+The code is well documented and split into multiple modules for easy access and understanding.
+
+## Conclusion
+This solution offers a hybrid of proof of concept and full implementation, it is a fully functional system that can be easily extended and customized to fit the needs of any organization. It is a robust and reliable system that can be easily deployed and scaled to meet the needs of any organization.
